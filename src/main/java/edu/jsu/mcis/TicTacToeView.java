@@ -56,9 +56,8 @@ public class TicTacToeView extends JPanel implements ActionListener {
         String name = ((JButton) event.getSource()).getName(); // Get button name
         
         // INSERT YOUR CODE HERE
-
-        int row = Integer.parseInt(name.substring(6,7));
-        int col = Integer.parseInt(name.substring(7,8));
+        int row = Integer.parseInt(name.substring(6));
+        int col = Integer.parseInt(name.substring(7));
         model.makeMark(row, col);
         updateSquares();
         
